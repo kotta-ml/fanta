@@ -1,0 +1,228 @@
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="author" content="mono">
+     
+ <title>mono</title>
+     
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+     
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600&display=swap" rel="stylesheet">    
+
+  <script src="t.min.js"></script>  
+     
+  <link rel="stylesheet" href="animate.css">      
+  <script src="wow.min.js"></script>
+     
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   
+<head>
+<body>
+ <div class="wrapper">
+          
+<!--navbar starts here--> 
+     
+ <nav>
+     <span id="brand">
+      <a href="index.html">mono</a>
+     </span>
+     
+     <ul id="menu">
+       <li><a href="index.html">home<span>.</span></a></li>
+       <li><a href="work.html">works<span>.</span></a></li>
+       <li><a href="about.html">about<span>.</span></a></li>
+       <li><a href="contact.html">contact<span>.</span></a></li>
+       <li><a href="project.html">project<span>.</span></a></li>
+     </ul>
+     
+       <div id="toggle">
+         <div class="span">menu</div>
+       </div>
+     
+ </nav>
+     
+ <div id="resize">
+  <div class="close-btn">close</div>
+     
+  <ul id="menu">
+     <li><a href="index.html">home<span>.</span></a></li>
+     <li><a href="work.html">works<span>.</span></a></li>
+     <li><a href="about.html">about<span>.</span></a></li>
+     <li><a href="contact.html">contact<span>.</span></a></li>
+     <li><a href="project.html">project<span>.</span></a></li>
+  </ul>     
+ </div>     
+        
+<!--navbar ends here--> 
+    
+         
+<!--hero section starts here-->  
+     
+ <div class="hero">
+   <div class="header">
+     <h1 class="line anim-typewriter">write | draw |  show</h1>  
+   </div>    
+ </div>   
+     
+ <div class="scroll-down"></div>
+          
+<!--hero section ends here-->  
+    
+    
+         
+<!--projects section starts here-->
+     
+ <div class="container-fluid">
+    <br><br><br>
+     
+     <h6>Selected Projects</h6>
+     
+     <div class="vertical"></div>
+     <br>
+     
+     <div class="whitespace"></div>
+     <div class="whitespace"></div>
+     <div class="whitespace"></div>
+     
+     <div class="row">
+       <div class="col-lg-8"></div>
+         
+       <div class="col-lg-4 project project1 wow fadeInUp" onclick="location.href='project.html"></div>
+     </div>
+     
+     <div class="whitespace"></div>
+     
+     <div class="row">
+       <div class="col-lg-6 project project2 wow fadeInUp" onclick="location.href='project.html'"></div>
+         
+       <div class="col-lg-6"></div>
+     </div>
+         
+      <div class="whitespace"></div>
+      <div class="whitespace"></div>
+      <div class="whitespace"></div> 
+ </div>     
+         
+<!--projects section ends here-->    
+    
+         
+<!--footer starts here--> 
+     
+ <div class="footer">
+   <div class="container">
+     <br><br>
+       
+     <div class="collab">
+      <div class="row">
+         <div class="col-lg-12">
+          <p class="animate__animated animate__fadeInUp delay-3s">Got an idea? Here I am.</p>
+         </div>   
+      </div>  
+     </div>
+       
+     <br>
+       
+     <div class="hr">
+       <div class="row"></div>  
+     </div>
+       
+     <br><br>
+       
+     <div class="info">
+       <div class="row">
+           <div class="col-lg-4" id="personal">
+            <p class="animate__animated animate__fadeInUp delay-3s">.connect with me</p>
+            <h4 class="animate__animated animate__fadeInUp delay-2s">ig @ohta_ta</h4>
+            <br><br>   
+           </div>   
+               
+           <div class="col-lg-4" id="media">
+            <p class="animate__animated animate__fadeInUp delay-3s">.take my hand</p>
+               
+            <ul>
+                <li id="fb" class="animate__animated animate__fadeInUp delay-6s">fb</li>
+                <li id="ig" class="animate__animated animate__fadeInUp delay-5s">ig</li>
+                <li id="tw" class="animate__animated animate__fadeInUp delay-4s">tw</li>
+                <li id="wt" class="animate__animated animate__fadeInUp delay-3s">wt</li>
+            </ul>
+               
+            <br><br>   
+         </div>
+           
+           <div class="col-lg-4" id="media">
+            <p class="animate__animated animate__fadeInUp delay-3s">.say hello</p>
+            <h4 class="animate__animated animate__fadeInUp delay-2s">kristin.calip@cdsp.edu.com</h4>
+            <br><br>   
+         </div> 
+       </div>
+     </div>
+   </div>    
+ </div>     
+    
+         
+<!--footer ends here-->    
+    
+ <br><br><br><br>
+     
+<div>
+
+<!--greensock cdn-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript"> 
+       
+// navigation starts here 
+        
+ $("#toggle").click(function(){
+   $(this).toggleClass('on');
+   $("#resize").toggleClass("active"); 
+     
+ });
+        
+ $("#resize ul li a").click(function(){
+   $(this).toggleClass('on');
+   $("#resize").toggleClass("active");
+     
+ }); 
+        
+ $(".close-btn").click(function(){
+   $(this).toggleClass('on');
+   $("#resize").toggleClass("active"); 
+     
+ });        
+        
+// navigation ends here
+        
+        
+// nav animation
+
+ TweenMax.from("#brand", 1, {
+  delay: 0.4,
+  y: 10,
+  opacity: 0,
+  ease: Expo.easeInOut
+ });
+        
+ TweenMax.staggerFrom("#menu li a", 1, {
+   delay: 0.4,
+   opacity: 0,
+   ease: Expo.easeInOut
+ }, 0.1);
+        
+// nav animation ends
+        
+ new WOW().init();
+        
+// All animations will take twice the time to accomplish
+document.documentElement.style.setProperty('--animate-duration', '5s');
+        
+ </script>        
+  
+   </body>
+  </html>
